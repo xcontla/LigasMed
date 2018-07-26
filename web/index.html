@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html >
+    <head>
+        <script src="/LigasComunidadMed/resources/js/angular/angular.js"></script>
+        <script src="/LigasComunidadMed/resources/js/controller/comunidadmed.js"></script>
+        <title>Comunidad Med Ligas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+        <div ng-app="comunidadMed">
+            <h1> Ejemplo de Ligas </h1>
+            <div ng-controller="medCtrl" ng-cloak>
+                <div>
+                    GET:
+                    <br>
+                    Ejemplo 1: <br>
+                    Identificador: I0BCR05K
+                    <a href="http://132.248.47.175:8080/ComunidadMED/init/key/I0BCR05K/key2/$2a$10$6nYMnN00gaUSYGTMS73H5OmXDZkYWXM0AZ3nE8GV0P6AoXJ1rYWAu
+                       "> Cuestionario Herrera y Montes</a>
+                    <hr>
+                    Ejemplo 2: <br>
+                    Identificador: YAGHG39X
+                    <a href="http://132.248.47.175:8080/ComunidadMED/init/key/YAGHG39X/key2/$2a$10$9yfiJOuB0q5DcUGO6xqzPe1mNTDeIPmkGiVlLQmImEZJLk5QSXJDi"> Cuestionario Herrera y Montes</a>
+                    <hr>
+                    Ejemplo 3: <br>
+                    Identificador: Z7VIIRQH
+                    <a href="http://132.248.47.175:8080/ComunidadMED/init/key/Z7VIIRQH/key2/$2a$10$duNYsF5pvDHAYyQf17oxxuUUFGpRs6EbHggZAprkxDpVhxHgGCJwa"> Cuestionario Herrera y Montes</a>
+                </div>
+                <div>
+                    POST:
+                    <br>
+                    <button ng-click="cuestionarioHyM()"> Cuestionario Herrera y Montes </button>
+                </div>
+            </div>
+        </div>
+        <script src="/LigasComunidadMed/resources/js/jquery-3.2.1.js" type="text/javascript"></script>
+    </body>
+</html>
